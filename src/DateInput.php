@@ -66,7 +66,7 @@ final class DateInput extends TextInput {
 		return $this;
 	}
 
-	protected function getHttpData($type, ?string $htmlTail = null) {
+	protected function getHttpData($type, ?string $htmlTail = null): mixed {
 		$str = parent::getHttpData($type, $htmlTail);
 
 
@@ -138,7 +138,7 @@ final class DateInput extends TextInput {
 	/**
 	 * @return DateTime|DateTimeImmutable|null
 	 */
-	public function getValue() {
+	public function getValue(): mixed {
 		return $this->value;
 	}
 
